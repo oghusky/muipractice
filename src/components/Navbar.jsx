@@ -44,7 +44,7 @@ const Navbar = () => {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            Mui NavBar
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -100,7 +100,7 @@ const Navbar = () => {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            NavBar Demo
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (

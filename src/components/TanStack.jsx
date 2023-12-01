@@ -1,7 +1,8 @@
 import {useQuery, useMutation, useQueryClient} from '@tanstack/react-query';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button'
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 const Posts = [
     {id:1, title: "Post 1"},
     {id:2, title: "Post 2"},
@@ -27,12 +28,12 @@ const TanStackEx = ()=>{
         },
         retry: 1, // mutation on tries once unless this property is given a numeric value
     })
-    
+
     if(postQuery.isLoading) return <h1>...Loading</h1>
     if(postQuery.error) return <code>{JSON.stringify(postQuery.error)}</code>
     if (postQuery.isFetched) return(
         <>
-        <h2>Learning React Query</h2>
+        <Typography variant='h3'>React Query Demo</Typography>
         <Grid container spacing={3}>
                 {postQuery.data.map( item => 
                 (<Grid item sm={6} key={item.id}>

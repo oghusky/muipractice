@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button'
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 const GridTemp = ()=>{
     const [users, setUsers] = useState([]);
     useEffect(()=>{
@@ -14,7 +15,7 @@ const GridTemp = ()=>{
     },[])
     return(
         <>
-        <h2>MUI Grid</h2>
+        <Typography variant='h2'>MUI Grid</Typography>
             <Grid container spacing={3}>
                 {users.map(u =>(
                     <Grid item xs={4} key={u.id} justifyContent={"center"} alignItems={"center"}>
