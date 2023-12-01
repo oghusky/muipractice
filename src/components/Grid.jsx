@@ -15,8 +15,19 @@ const GridTemp = ()=>{
     },[])
     return(
         <>
+        {/* Typography
+                variant values: h1-h6, subtitle1-subtitle2, body1-body2, button, caption, overline, ""
+                display value: block, ""
+                gutterBottom is a relative CSS marginBottom value
+            */}
         <Typography variant='h2'>MUI Grid</Typography>
-            <Grid container spacing={3}>
+        {/* spacing prop handles  spacing between children*/}
+            <Grid 
+            container 
+            spacing={3} //row and column spacing in on prop can also be done separately. shown below
+            // columnSpacing={{xs: 1, sm: 2, md: 3}}
+            // rowSpacing={{sm:1}}
+            >
                 {users.map(u =>(
                     <Grid item xs={4} key={u.id} justifyContent={"center"} alignItems={"center"}>
                         <Box style={{padding: "20px"}}>

@@ -297,6 +297,11 @@ export default function EnhancedTable() {
 
   return (
     <Box sx={{ width: '100%' }}>
+        {/* Typography
+                variant values: h1-h6, subtitle1-subtitle2, body1-body2, button, caption, overline, ""
+                display value: block, ""
+                gutterBottom is a relative CSS marginBottom value
+            */}
         <Typography variant='h3'>Table Demo</Typography>
       <Paper sx={{ width: '100%', mb: 2 }}>
         <EnhancedTableToolbar numSelected={selected.length} />

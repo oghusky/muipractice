@@ -33,6 +33,11 @@ const TanStackEx = ()=>{
     if(postQuery.error) return <code>{JSON.stringify(postQuery.error)}</code>
     if (postQuery.isFetched) return(
         <>
+        {/* Typography
+                variant values: h1-h6, subtitle1-subtitle2, body1-body2, button, caption, overline, ""
+                display value: block, ""
+                gutterBottom is a relative CSS marginBottom value
+            */}
         <Typography variant='h3'>React Query Demo</Typography>
         <Grid container spacing={3}>
                 {postQuery.data.map( item => 
