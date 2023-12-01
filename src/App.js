@@ -7,10 +7,21 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
+      
+      {/* https://mui.com/material-ui/react-text-field/ */}
       <Inputs/>
-      <TanStackEx/>
+      
+      {/* https://mui.com/material-ui/react-table/#basic-table */}
       <EnhancedTable/>
+      
+      {/* https://mui.com/material-ui/react-grid/#how-it-works */}
       <GridTemp/>
+      
+      {/* 
+      docs: https://tanstack.com/query/v4/docs/react/guides/paginated-queries
+      video: https://www.youtube.com/watch?v=r8Dg0KVnfMA
+       */}
+      <TanStackEx/>
     </div>
   );
 }
